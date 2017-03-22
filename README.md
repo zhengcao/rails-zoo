@@ -23,13 +23,13 @@ Each requirements section of this assignment has three sections: **think, create
 **Create**:
 1. a rails controller with the name `animals`
 1. a new model (migration) with the name `animal`
-  - each animal shall have a `name`, `species` and an `age` (add any other fields you want to track about the animals)
-  - i.e. Georgia is a Lion  who is 4 years old
+    - each animal shall have a `name`, `species` and an `age` (add any other fields you want to track about the animals)
+    - i.e. Georgia is a Lion  who is 4 years old
 1. create the schema from the migration by running `rails db:migrate`
 
 **Verify**:
 1. Check the `schema.rb` file and ensure all fields you expect are in the animals table
-  - if they are not, you may need to create another migration
+    - if they are not, you may need to create another migration
 1. Run the `rails console` from the command line and create a few new animals and save them to the database. These animals will be used in the next set of requirements
 
 ### View All Animals
@@ -55,7 +55,7 @@ Each requirements section of this assignment has three sections: **think, create
 1. the route (including the param)
 1. the controller action which will retrieve one specific animal from the database
 1. the view containing HTML & ERB to see a single animal details
-  - you can use [lorem pixel](http://lorempixel.com) to get animal images if you'd like to include a random photo for each animal
+    - you can use [lorem pixel](http://lorempixel.com) to get animal images if you'd like to include a random photo for each animal
 1. add a link to the list of animals which will take you to each animals details page
 
 **Verify**:
