@@ -23,19 +23,19 @@ Each requirements section of this assignment has three sections: **think, create
 **Create**:
 1. a rails controller with the name `animals`
 1. a new model (migration) with the name `animal`
-  - each animal shall have a `name`, `type` and an `age` (add any other fields you want to track about the animals)
+  - each animal shall have a `name`, `species` and an `age` (add any other fields you want to track about the animals)
   - i.e. Georgia is a Lion  who is 4 years old
 1. create the schema from the migration by running `rails db:migrate`
 
 **Verify**:
 1. Check the `schema.rb` file and ensure all fields you expect are in the animals table
-  - if they are not, you may need to create another migration, or reset the database by running `rails db:reset`
+  - if they are not, you may need to create another migration
 1. Run the `rails console` from the command line and create a few new animals and save them to the database. These animals will be used in the next set of requirements
 
 ### View All Animals
 **Think**:
 - Which route (including controller#action) do you use for viewing _all_ of a given resource?
-- Which _model method_ do you use to retrieve _all_ of the items from the database?
+- Which _model method_ do you use to retrieve _every item_ from the database?
 
 **Create**:
 1. the route
@@ -56,10 +56,10 @@ Each requirements section of this assignment has three sections: **think, create
 1. the controller action which will retrieve one specific animal from the database
 1. the view containing HTML & ERB to see a single animal details
   - you can use [lorem pixel](http://lorempixel.com) to get animal images if you'd like to include a random photo for each animal
-1. add a link to the list of animals which will take you to each animals `show` page
+1. add a link to the list of animals which will take you to each animals details page
 
 **Verify**:
-1. http://localhost:3000/animals will now include links for each animal's show page
+1. http://localhost:3000/animals will now include links for each animal's detail page
 1. http://localhost:3000/animals/1 should show you the details of one specific animal (assuming you have an animal in the database with an ID of 1)
 
 ### Create an Animal
@@ -85,3 +85,5 @@ Each requirements section of this assignment has three sections: **think, create
 ## Optional
 - Complete the edit/update action
 - Complete the delete action
+- Add an image field to the model for an Animal
+  - this field will store the location of an image on the internet and be used to display the image on the animal's show page
