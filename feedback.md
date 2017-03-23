@@ -9,5 +9,5 @@
 | Successfully handles: Index, Show |   |
 | Successfully handles: New, Create |   |
 | Routes follow RESTful conventions |   |
-| Uses named routes (like `_path`) |   |
+| Uses named route helpers (like `_path`) |   |
 |  **Overall** |   |
