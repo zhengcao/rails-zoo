@@ -1,2 +1,10 @@
-<h1>Animals#show</h1>
-<p>Find me in app/views/animals/show.html.erb</p>
+<h1> <%= @animal.name %></h1>
+
+<p>
+  <%= @animal.name %> is a <%= @animal.species %> who is <%= @animal.age %>
+  <% if @animal.age <= 1 %>
+    year old.
+  <% else %>
+    years old.
+  <% end %>
+</p>
