@@ -9,4 +9,5 @@
   <% end %>
 </p>
 
-<%= link_to "Edit", edit_animal_path(@animal.id) %>
+<%= link_to "Edit", edit_animal_path(@animal) %>
+<%= link_to "Delete", animal_path(@animal), :data => {:confirm => 'Are you sure?'}, method: :delete %>
