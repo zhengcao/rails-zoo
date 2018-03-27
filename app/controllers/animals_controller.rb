@@ -1,6 +1,6 @@
 class AnimalsController < ApplicationController
   def index
-    @animals = Animal.all
+    @animals = Animal.all.order(vote: :desc)
   end
 
   def show
@@ -34,6 +34,19 @@ class AnimalsController < ApplicationController
         redirect_to animal_path
       else
         render :edit
+      end
+    end
+  end
+
+  def vote
+    @animal = Animal.find_by(id: params[:id])
+
+    if @animal
+      @animal.vote += 1
+      if @animal.save
+        redirect_to animal_path
+      else
+        render :show
       end
     end
   end
