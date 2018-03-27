@@ -1,8 +1,6 @@
 <h1>Ada Zoo</h1>
 
-<%= link_to "Add Animal", new_animal_path %>
-<br>
-
+<p> Welcome to Ada Zoo! Currently we have <%= @animals.size %> members. Below is a full list of them. Please feel free to click on any one you're interested in and learn more about her/him. You can also vote for the ones you really love, which will make them go to the top of the list. Have fun! 😉 </p>
 <% @animals.each do |animal| %>
   <%= link_to animal.name, animal_path(animal.id) %>
 <% end %>
