@@ -13,6 +13,7 @@ class AnimalsController < ApplicationController
 
   def create
     @animal = Animal.new(animal_params)
+    @animal.vote = 0
     if @animal.save
       redirect_to animals_path
     else
@@ -28,6 +29,7 @@ class AnimalsController < ApplicationController
     @animal = Animal.find_by(id: params[:id])
 
     if @animal
+      @animal.vote ||= 0
       if @animal.update(animal_params)
         redirect_to animal_path
       else
