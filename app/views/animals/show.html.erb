@@ -1,7 +1,7 @@
 <h1> <%= @animal.name %> <%= @animal.species %> </h1>
 
 <p>
-  <%= @animal.name %> is a <%= @animal.species %> who is <%= @animal.age %>
+  <%= @animal.name %> is a <%= @animal.gender %> <%= @animal.species %> who is <%= @animal.age %>
   <% if @animal.age <= 1 %>
     year old.
   <% else %>
