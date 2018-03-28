@@ -6,13 +6,30 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag   'normalize.css' %>
+    <%= stylesheet_link_tag   'styles.css' %>
   </head>
 
   <body>
+    <nav>
+      <h1>Ada Zoo</h1>
+      <ul>
+        <li>
+          <h3><%= link_to "Animal List", animals_path %></h3>
+        </li>
+        <li>
+          <h3><%= link_to "Register Animal", new_animal_path %></h3>
+        </li>
+      </ul>
+    </nav>
 
-    <%= link_to "Animal List", animals_path %>
-    <%= link_to "Register Animal", new_animal_path %>
+    <header>
+    </header>
 
     <%= yield %>
+
+    <footer>
+      <h4>Zheng Cao ©2018</h4>
+    </footer>
   </body>
 </html>
