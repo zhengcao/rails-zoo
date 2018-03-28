@@ -6,7 +6,7 @@
   <% end %>
 
   <p>
-    <%= @animal.name %> is a <%= @animal.gender %> <%= @animal.species %> who is <%= @animal.age %>
+    <%= @animal.name %> is a <%= @animal.gender %> <%= @animal.species %> who is <strong><%= @animal.age %></strong>
     <% if @animal.age <= 1 %>
       year old.
     <% else %>
@@ -14,7 +14,12 @@
     <% end %>
   </p>
   <p>
-    Current vote: <strong><%= @animal.vote %></strong>
+    <% if @animal.gender == "female" %>
+      Her
+    <% else %>
+      His
+    <% end %>
+    current vote is <strong><%= @animal.vote %></strong>.
   </p>
 
   <ul>

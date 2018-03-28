@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=David+Libre|Elsie+Swash+Caps|Flavors|Fontdiner+Swanky|Griffy|IM+Fell+English|Mountains+of+Christmas|Mystery+Quest|Ranchers|Ribeye|Sevillana');
-/* font-family: 'Fontdiner Swanky', cursive;
-font-family: 'IM Fell English', serif;
-font-family: 'David Libre', serif;
-font-family: 'Ranchers', cursive;
+@import url('https://fonts.googleapis.com/css?family=David+Libre|Mountains+of+Christmas|Mystery+Quest|Ribeye');
+/* font-family: 'David Libre', serif;
 font-family: 'Mystery Quest', cursive;
 font-family: 'Mountains of Christmas', cursive;
-font-family: 'Ribeye', cursive;
-font-family: 'Griffy', cursive;
-font-family: 'Flavors', cursive;
-font-family: 'Elsie Swash Caps', cursive;
-font-family: 'Sevillana', cursive; */
+font-family: 'Ribeye', cursive; */
+
+/* RGB */
+/* $color1: rgba(252, 252, 98, 1); #FCFC62; yellow
+$color2: rgba(152, 223, 175, 1); #98DFAF; green
+$color3: rgba(115, 0, 113, 1); #730071; purple
+$color4: rgba(254, 255, 234, 1); #FEFFEA; white
+$color5: rgba(22, 0, 30, 1); #16001E; black */
 
 /********** global **********/
 ul {
@@ -20,9 +20,12 @@ ul {
 
 a {
   text-decoration: none;
-
   font-family: 'Mountains of Christmas', cursive;
+  color: #730071;
+}
 
+a:hover {
+  color: #98DFAF;
 }
 
 h1, h3, h4 {
@@ -47,9 +50,14 @@ label, input {
   font-family: 'David Libre', serif;
 }
 
+.show h1, .form h1 {
+  padding: 10px 0;
+}
+
 /********** layout **********/
 html, body {
   width: 100%;
+  background-color: #FEFFEA;
 }
 
 header {
@@ -117,13 +125,13 @@ nav h3 {
 }
 
 .list li {
-  font-size: 1.5em;
+  font-size: 1.6em;
   padding: 0 20px;
 }
 
 /********** show **********/
 .show {
-  min-height: 400px;
+  min-height: 500px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -136,7 +144,7 @@ nav h3 {
 }
 
 .show li {
-  font-size: 1.5em;
+  font-size: 1.6em;
   padding: 0 20px;
 }
 
@@ -146,7 +154,6 @@ nav h3 {
 
 .show strong {
   color: red;
-  font-family: cursive;
 }
 
 /********** form **********/
