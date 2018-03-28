@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=David+Libre|Elsie+Swash+Caps|Flavors|Fontdiner+Swanky|Griffy|IM+Fell+English|Mountains+of+Christmas|Mystery+Quest|Ranchers|Ribeye|Sevillana');
+/* font-family: 'Fontdiner Swanky', cursive;
+font-family: 'IM Fell English', serif;
+font-family: 'David Libre', serif;
+font-family: 'Ranchers', cursive;
+font-family: 'Mystery Quest', cursive;
+font-family: 'Mountains of Christmas', cursive;
+font-family: 'Ribeye', cursive;
+font-family: 'Griffy', cursive;
+font-family: 'Flavors', cursive;
+font-family: 'Elsie Swash Caps', cursive;
+font-family: 'Sevillana', cursive; */
+
 /********** global **********/
 ul {
   text-align: center;
@@ -7,10 +20,14 @@ ul {
 
 a {
   text-decoration: none;
+
+  font-family: 'Mountains of Christmas', cursive;
+
 }
 
-h1, h3 {
+h1, h3, h4 {
   margin: 10px;
+  font-family: 'Ribeye', cursive;
 }
 
 p {
@@ -19,11 +36,15 @@ p {
   width: 90%;
   text-align: center;
   margin: 5px;
+
+  font-family: 'Mystery Quest', cursive;
 }
 
 label, input {
   font-size: 1.3em;
   margin: 5px;
+
+  font-family: 'David Libre', serif;
 }
 
 /********** layout **********/
@@ -78,7 +99,7 @@ nav h3 {
 
 /********** list **********/
 .list {
-  min-height: 250px;
+  min-height: 350px;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
