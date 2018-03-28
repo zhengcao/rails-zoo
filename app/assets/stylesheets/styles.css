@@ -163,3 +163,18 @@ nav h3 {
   align-items: center;
   min-height: 500px;
 }
+
+.form input:last-child {
+  background-color: inherit;
+  border: none;
+  text-decoration: none;
+  font-family: 'Mountains of Christmas', cursive;
+  color: #730071;
+  font-size: 1.6em;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.form input:last-child:hover {
+  color: #98DFAF;
+}
